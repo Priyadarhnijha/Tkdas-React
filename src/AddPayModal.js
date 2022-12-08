@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
-import {Modal,Button, Row, Col, Form} from 'react-bootstrap';
+import {Modal, Button, Row, Col, Form} from 'react-bootstrap';
+//import { Modal } from 'react-responsive-modal';
 import { useNavigate, Link, NavLink, Navigate,Route } from 'react-router-dom';
 
 export class AddPayModal extends Component{
@@ -7,7 +8,8 @@ export class AddPayModal extends Component{
         super(props);
         let loggedIn = false
         this.state = {
-            loggedIn
+            loggedIn:false,
+            show: true
         }
         this.state={prods:[]};
         this.handleSubmit=this.handleSubmit.bind(this);
@@ -63,12 +65,13 @@ export class AddPayModal extends Component{
             <div className="container">
 
 <Modal
+// show={true}
 {...this.props}
-size="lg"
-aria-labelledby="contained-modal-title-vcenter"
-centered
+// size="lg"
+// aria-labelledby="contained-modal-title-vcenter"
+backdrop="static"
 >
-    <Modal.Header clooseButton>
+    <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
             Add Payment
         </Modal.Title>
@@ -138,7 +141,7 @@ centered
                         
 
                     <Form.Group>
-                        <Button variant="primary" type="submit">
+                        <Button variant="primary" type="submit" onClick={this.handleSubmit()}>
                             Add Payment
                         </Button>
                     </Form.Group>
@@ -159,3 +162,5 @@ centered
     }
 
 }
+
+export default AddPayModal;

@@ -16,27 +16,27 @@ export class Navigation extends Component{
                 </NavLink>
                 </Marquee>
 
-                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20, marginLeft:500, padding:2}} to="/">
+                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20, marginLeft:50, padding:5}} to="/">
                     Home
                 </NavLink>
 
-                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20, padding:2}} to="/">
+                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20, padding:5}} to="/">
                     Order
                 </NavLink>
 
-                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20, padding:2}} to="/">
+                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20, padding:5}} to="/AddPayModal">
                     Cart
                 </NavLink>
 
-                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20,marginLeft:10, padding:2}} to="/About">
+                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20,marginLeft:10,  padding:5}} to="/About">
                     About Us
                 </NavLink>
 
-                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' , textDecoration:'none' , fontSize:20, marginLeft:10, padding:2}} to="/FAQs">
+                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' , textDecoration:'none' , fontSize:20, marginLeft:10, padding:5}} to="/FAQs">
                     FAQs
                 </NavLink>
 
-                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20,marginLeft:10, padding:2}} to="/Payment">
+                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20,marginLeft:10, marginRight:50, padding:5}} to="/Payment">
                     Payment Details
                 </NavLink>
 
