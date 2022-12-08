@@ -30,13 +30,13 @@ export class AddPayModal extends Component{
                 'Content-Type':'application/json'
             },
             body:JSON.stringify({
-               PaymentId:null,
-               Name:event.target.Name.value,
-               CardNo:event.target.CardNo.value,
-               ExpiryDate:event.target.Status.value,
-               CvvNo:event.target.CvvNo.value,
-               Address:event.target.Address.value,
-               PaymentMode:event.target.PaymentMode.value
+               paymentId:null,
+               name:event.target.Name.value,
+               cardNo:event.target.CardNo.value,
+               expiryDate:event.target.Status.value,
+               cvvNo:event.target.CvvNo.value,
+               address:event.target.Address.value,
+               paymentMode:event.target.PaymentMode.value
             })
 
         })
@@ -63,7 +63,7 @@ export class AddPayModal extends Component{
             <div className="container">
 
 <Modal
-{...this.props}
+{...this.props}                                                                     //spreading data
 size="lg"
 aria-labelledby="contained-modal-title-vcenter"
 centered
@@ -77,8 +77,6 @@ centered
 
         <Row>
             <Col sm={6}>
-
-            
 
                 <Form onSubmit={this.handleSubmit}>
                     <Form.Group controlId="PaymentId">
@@ -159,3 +157,5 @@ centered
     }
 
 }
+
+export default AddPayModal;
