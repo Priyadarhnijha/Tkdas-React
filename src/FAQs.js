@@ -6,7 +6,7 @@ export class FAQs extends Component{
         
 
 return(
-<div style={{backgroundColor:'#EE8740', marginLeft:10}}>
+<div style={{backgroundColor:'#36454F', marginLeft:10, color: "#DAF7A6"}}>
 <h1 class="faq-heading">FAQ'S</h1>
        
             <div class="faq-one">

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 import axios from 'axios';
+import Food10 from "./Images/Food10.jpg";
 
 export class Payment extends Component {
 
@@ -30,8 +31,10 @@ export class Payment extends Component {
 
         const myStyle = {
             backgroundImage:
-                "url('https://images.moneycontrol.com/static-mcnews/2022/06/Indian-Digital-Payments_pic.jpg?impolicy=website&width=770&height=431')",
-            height: '90vh',
+                //"url('https://images.moneycontrol.com/static-mcnews/2022/06/Indian-Digital-Payments_pic.jpg?impolicy=website&width=770&height=431')",
+            "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpWHakBhB5SWm04gr6U7gM9XLDXOWe4Hl1mQ&usqp=CAU')",
+            height: '70vh',
+             width: '180',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -41,7 +44,7 @@ export class Payment extends Component {
         return (
             <div className="mb-2 pageheading" style={myStyle}>
 
-                <Table className="mt-4" striped bordered hover size="sm" border="1px solid black" style={{ width: "100%" }}>
+                <Table className="mt-4" striped bordered hover size="sm" border="1px solid black" style={{ width: "100%", backgroundColor: "white"}}>
                     {/* <thead> */}
                     <tr>
                         <th>PaymentId</th>

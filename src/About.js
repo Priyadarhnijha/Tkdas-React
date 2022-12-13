@@ -13,7 +13,8 @@ export class ABOUT extends Component{
            // backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            backgroundColor:'#a9a9a9',
+            backgroundColor:'#36454F',
+            color: "#DAF7A6"
         };
         
         return(

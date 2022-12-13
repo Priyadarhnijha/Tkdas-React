@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import {Navbar,Nav} from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
-import { AddPayModal } from './AddPayModal';
+import { Cart } from './Cart';
 
 export class Navigation extends Component{
     render(){
@@ -10,7 +10,7 @@ export class Navigation extends Component{
 
             <Navbar bg="light" expand="lg">
             <Nav>
-                <div style={{backgroundColor:"#FC702B ", padding:5}}>
+                <div style={{backgroundColor:"#581845 ", padding:5, color : "white"}}>
                 <Marquee speed={70}>
                 <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' , textDecoration:'none' , fontSize:25, marginRight:100}}>
                     GOOD FOOD GOOD LIFE
@@ -22,11 +22,11 @@ export class Navigation extends Component{
                     Home
                 </NavLink>
 
-                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20, padding:5}} to="/">
+                {/* <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20, padding:5}} to="/">
                     Order
-                </NavLink>
+                </NavLink> */}
 
-                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20, padding:5}} to="/AddPayModal">
+                <NavLink className="d-inline p-2 bg-light text-black" style={{color: "white", fontWeight: 'bold' ,textDecoration:'none' , fontSize:20, padding:5}} to="/Cart">
                     Cart
                 </NavLink>
 

@@ -2,9 +2,7 @@ import React from 'react';
 import './App.css';
 
 import {UserDashboard} from './UserDashboard';
-// import {Products} from './Products';
-// import {Orders} from './Orders';
-// import {Transactions} from './Transactions';
+
 
 
 import {Navigation} from './Navigation';
@@ -13,8 +11,10 @@ import {BrowserRouter, Route,Routes, Link} from 'react-router-dom';
 import {ABOUT} from './About';
 import{FAQs} from './FAQs';
 import{Starter} from './Starter';
-import { AddPayModal } from './AddPayModal';
+import  AddPayment from './AddPayment';
 import { Payment } from './Payment';
+import { Cart } from './Cart';
+
 
 
 function App() {
@@ -32,8 +32,10 @@ function App() {
       <Route path='/About' element={<ABOUT/>} exact />
       <Route path='/FAQs' element={<FAQs/>} exact />
       <Route path='/Starter' element={<Starter/>} exact />
-      <Route path='/AddPayModal' element={<AddPayModal/>} exact />
+      <Route path='/AddPayment' element={<AddPayment/>} exact />
       <Route path='/Payment' element={<Payment/>} exact />
+      <Route path='/Cart' element={<Cart/>} exact />
+
 
     </Routes>
     </div>

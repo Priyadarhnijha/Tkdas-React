@@ -1,10 +1,11 @@
 import React,{Component} from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, redirect} from 'react-router-dom';
 import {Navbar,Nav} from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
 import './App.css';
 import Starter1 from "./Images/Starter1.jpg";
-import {AddPayModal} from './AddPayModal';
+import Starter2 from "./Images/Starter2.jpg";
+import {AddPayModal} from './AddPayment';
 import Button from 'react-bootstrap/Button'
 
 export class Starter extends Component{
@@ -24,16 +25,33 @@ export class Starter extends Component{
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
+        
       };
+      
 
         return(
           // let testModalClose=()=>this.setState({testModalShow:false});
           <div>
           <div style={{marginRight:700, marginTop:20}}>
-          <img src={Starter1} height= "250" width= "300" marginLeft="220"/>
+          <img src={Starter1} height= "150" width= "200" marginLeft="220"/>
+          <h3 style={{color:"Red", fontWeight:'bold', fontSize:15}}>Pakode </h3>
+          <h3 style={{color:"Red", fontWeight:'bold', fontSize:15}}>Price Rs.160/- </h3>
+
+          <img src={Starter2} height= "150" width= "200" marginRight="400"/>
+          <h3 style={{color:"Red", fontWeight:'bold', fontSize:15}}>Paneer Tikka </h3>
+          <h3 style={{color:"Red", fontWeight:'bold', fontSize:15}}>Price Rs.240/- </h3>
+
           </div>
 
-          <div>
+          {/* <div>
+          <div style={{marginLeft:750, marginTop:20}}>
+          <img src={Starter2} height= "150" width= "200" marginLeft=""/>
+          <h3 style={{color:"Red", fontWeight:'bold', fontSize:15}}>Paneer Tikka </h3>
+          <h3 style={{color:"Red", fontWeight:'bold', fontSize:15}}>Price Rs.250/- </h3>
+          </div>
+         </div>
+          <div> */}
+            
           {/* <ButtonToolbar>
 
               <Button className="mr-2" variant="info"
@@ -55,7 +73,7 @@ export class Starter extends Component{
           address={address}
           paymentmode={paymentmode}/>
     </ButtonToolbar> */}
-    </div>
+    
     </div>
 
   )
